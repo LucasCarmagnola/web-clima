@@ -1,0 +1,42 @@
+html{
+    font-family: sans-serif;
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.texto{
+    color: white;
+}
+.texto-error{
+    color: red;
+    height: 15px;
+}
+
+.container-clima{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultado{
+    display: flex;
+
+}
+
+.resultado p{
+    margin: 15px 15px 15px 0;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+}
+
+.titulo img{
+    height: 90px;
+    width: 90px;
+    margin-left: 15px;
+}
