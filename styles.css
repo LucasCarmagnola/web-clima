@@ -1,17 +1,46 @@
-html{
-    font-family: sans-serif;
+body{
+    font-family: sans-serif, Arial, Helvetica;
     background-color: rgb(56, 55, 55);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
+    background-image: url('./archivos/paisaje.jpg');
+    background-size: 1920px 1080px; 
+    background-repeat: no-repeat;
 }
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    height: 40px;
+    width: 300px;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    border: 2px transparent solid;
+    font-size: 18px;
+}
+.input:hover{
+    border: 2px rgb(174, 174, 174) solid;
+}
+
+
 .texto{
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 .texto-error{
     color: red;
     height: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .container-clima{
@@ -21,18 +50,29 @@ html{
     align-items: center;
 }
 
+
 .resultado{
-    display: flex;
-
-}
-
-.resultado p{
-    margin: 15px 15px 15px 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.391);
+    height: 450px;
+    width: 350px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px 0;
 }
 
 .titulo{
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.texto-titulo{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
 }
 
 .titulo img{
@@ -40,3 +80,31 @@ html{
     width: 90px;
     margin-left: 15px;
 }
+
+.ciudad{
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.temperatura{
+    color: black;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.dato{
+    color: rgb(0, 0, 0);
+    font-weight: lighter;
+    font-size: 20px;
+}
+/* .dato{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.dato{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+} */

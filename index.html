@@ -9,35 +9,21 @@
 <body>
     <div class="container-clima">
         <div class="titulo">
-            <h1 class="texto">Consulta el clima de tu ciudad</h1>
+            <h1 class="texto-titulo">Consulta el clima de tu ciudad</h1>
             <img src="./archivos/weather02-512.webp" alt="">
         </div>
         
         <form id="form-clima">
-            <input type="text" name="input" id="input">
-            <input type="submit">
+            <input class="input" type="text" name="input" id="input">
             <p class="texto-error" id="texto-error"></p>
         </form>
         
-        <div class="resultados">
-            <h2 class="texto">Resultados</h2>
-            <div class="resultado">
-                <p class="texto">Temperatura:</p>
-                <p id="resultado-temperatura" class="texto"></p>
-            </div>
-            <div class="resultado">
-                <p class="texto">Sensación térmica:</p>
-                <p id="resultado-sensacion" class="texto"></p>
-            </div>
-            <div class="resultado">
-                <p class="texto">Humedad:</p>
-                <p id="resultado-humedad" class="texto"></p>
-            </div>
-            <div class="resultado">
-                <p class="texto">Viento:</p>
-                <p id="resultado-viento" class="texto"></p>
-            </div>
-            
+        <div class="resultado" id="resultado">
+            <p class="ciudad" id="ciudad"></p>
+            <p class="temperatura" id="resultado-temperatura"></p>
+            <p class="descripcion, dato" id="resultado-clima"></p>
+            <p class="humedad, dato" id="resultado-humedad"></p>
+            <p class="viento, dato"  id="resultado-viento"></p>
         </div>
         
     </div>
