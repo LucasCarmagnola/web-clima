@@ -16,6 +16,7 @@ async function getClima(nombreCiudad){
         
         
         if(respuesta.ok){
+            document.getElementById('resultado').style.display = 'flex'
             error.textContent = ''
             let data = await respuesta.json()
             let name = data.name 
@@ -63,7 +64,6 @@ form.addEventListener("submit", (event) => {
     const ciudad = document.getElementById('input').value
 
     if(ciudad){
-        document.getElementById('resultado').style.display = 'flex'
         getClima(ciudad)
     }else{
         // resultadoTemperatura.textContent = ``
